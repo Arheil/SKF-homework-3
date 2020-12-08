@@ -1,0 +1,102 @@
+@font-face {
+	src: url('./fonts/Kurale/Kurale-Regular.ttf');
+	font-family: 'Kurale';
+}
+
+@font-face {
+	src: url('./fonts/Montserrat/Montserrat-Regular.ttf');
+	font-family: 'Montserrat';
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.header {
+	text-align: center;
+}
+
+.header__menu {
+	display: flex;
+	width: 52vw;
+	margin: 20px auto;
+	justify-content: space-evenly;
+}
+
+.header__title, #about, #skills {
+	font-family: 'Kurale';
+}
+
+.menu__item {
+	display: inline;
+	margin-right: 25px;
+}
+
+.menu__link {
+	text-decoration: none;
+	color: orangered;
+	font-size: 1.2em;
+}
+
+.menu__link:hover {
+	color: turquoise;
+}
+
+.main {
+	/* width: 52vw; */
+	margin: 20px auto;
+}
+
+ .main__content {
+	margin-left: 3em;
+} 
+
+.main__foto {
+	text-align: left;
+}
+
+.main__link {
+	text-decoration: none;
+}
+
+.main__link--phone::before {
+	content: url('./img/icons/call-24px.svg');
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.main__link--mail::before {
+	content: url('./img/icons/email-24px.svg');
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.foto {
+	margin: 1em;
+	border: 1px solid black inset;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 5px black;
+}
+
+#about, #skills, #contacts {
+	padding-left: 0.8em;
+	border-left: 5px solid orangered;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.footer__link {
+	margin-right: 5px;
+}
+
